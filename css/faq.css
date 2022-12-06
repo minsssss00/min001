@@ -1,0 +1,365 @@
+@import url(./common.css);
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap");
+header {
+  position: fixed;
+  top: 0;
+  /* width: 100% */
+  left: 0;
+  right: 0;
+  height: 105px;
+  background: transparent;
+  width: 100%;
+  padding-top: 35px;
+}
+header .header-container01 {
+  margin: 0 auto;
+  display: table;
+}
+header .header-container01 a {
+  max-width: 194px;
+  height: 35px;
+}
+header .header-container02 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -35px;
+  padding: 0 30px;
+}
+header .header-container02 .menu01 {
+  height: 105px;
+}
+header .header-container02 .menu01 ul {
+  display: flex;
+  justify-content: space-between;
+}
+header .header-container02 .menu01 ul li a {
+  color: #DC272D;
+  text-decoration: none;
+  font-size: 18px;
+  margin-right: 40px;
+}
+header .header-container02 .icon button {
+  background: transparent;
+  border: none;
+  display: flex;
+  width: 262px;
+  justify-content: space-between;
+}
+header .header-container02 .icon span img {
+  padding: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+header .header-container02 .icon .cart-count {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  line-height: 28px;
+  border-radius: 50%;
+  margin-left: 5px;
+  background-color: #DC272D;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: -30px;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+main .main-container {
+  text-align: center;
+  width: 100%;
+  padding: 150px 0 70px 0;
+  margin: 0 auto;
+  background: linear-gradient(to bottom, #eef9ff, #fff, #fff);
+}
+main .main-container h2 {
+  font-size: 33px;
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+  font-weight: normal;
+  color: #231F20;
+  line-height: 1;
+  letter-spacing: 0;
+  display: block;
+}
+main .main-container ul {
+  width: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+main .main-container ul li {
+  cursor: pointer;
+}
+main .main-container ul li a {
+  display: block;
+  font-size: 16px;
+  color: #6F6F6F;
+  letter-spacing: 0.03em;
+  position: relative;
+  transition: all 0.3s;
+  font-family: "Circular Std", "Noto Sans KR";
+}
+main .faq-box {
+  width: 60%;
+  margin: 0 auto;
+}
+main .faq-box h2 {
+  text-align: left;
+  font-size: 23px;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0 0 30px;
+  text-align: left;
+  color: #231F20 !important;
+  letter-spacing: 0;
+  line-height: 1.2;
+}
+main .container {
+  margin-bottom: 40px;
+}
+main .container::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background: #bfe1f0;
+  top: 50%;
+  right: 42px;
+  margin-top: -1px;
+  transition: all 0.3s;
+}
+main .accordion {
+  background-color: #ffffff;
+  cursor: pointer;
+  padding: 32px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: left;
+  font-size: 16px;
+  transition: 0.4s;
+  position: relative;
+  padding-left: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+main .accordion .notice-num {
+  width: 150px;
+  text-align: center;
+  color: #009BDE;
+  font-weight: 500;
+  line-height: 1.1;
+  font-family: "Circular Std", "Noto Sans KR";
+  letter-spacing: -0.05em;
+}
+main .accordion .info {
+  width: 95%;
+  text-align: left;
+}
+main .accordion .info-btn a {
+  position: relative;
+}
+main .accordion .info-btn a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(90deg);
+  z-index: 999;
+}
+main .accordion .info-btn a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+main .accordion.active .info-btn a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  transition: 0.3s;
+  z-index: 999;
+}
+main .accordion.active .info-btn a::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 18px;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+.active,
+.accordion:hover {
+  background-color: #f5f5f5;
+  font-weight: bold;
+}
+
+.panel {
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
+  border-bottom: 1px solid #bfe1f0;
+  letter-spacing: -0.05em;
+  display: block;
+  background-color: #EEF8FF;
+  font-size: 14px;
+  color: #231F20;
+  line-height: 1.5;
+  overflow: hidden;
+}
+.panel p {
+  padding: 40px 30px;
+}
+
+.page-num {
+  display: flex;
+  justify-content: space-around;
+  width: 10%;
+  margin: 0 auto;
+}
+.page-num img {
+  margin: 0 40px;
+}
+.page-num p {
+  padding: 0 18px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: #DC272D;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+footer {
+  border-top: 1px solid #DC272D;
+  box-sizing: border-box;
+  width: 100%;
+  height: 352px;
+  margin-top: 150px;
+  padding: 71px 0 50px;
+}
+footer .tocobo-footer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .tocobo-footer .tocobo-official ul {
+  padding: 30px 0 70px;
+  color: #5B5B5B;
+  font-size: 13px;
+  line-height: 25px;
+}
+footer .tocobo-footer .tocobo-official ul li span {
+  display: block;
+  width: auto;
+  height: auto;
+  background-color: #fff;
+  letter-spacing: 0;
+  padding: 30px 0 70px;
+  margin: 0;
+  color: #DC272D;
+  font-size: 12px;
+  line-height: 19px;
+}
+footer .tocobo-footer .tocobo-official ul li .cs-btn button {
+  border: none;
+  background-color: transparent;
+  color: #5B5B5B;
+}
+footer .tocobo-footer .footer-menu {
+  width: 593px;
+  height: 189px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .tocobo-footer .footer-menu ul li {
+  display: block;
+  line-height: 1;
+  margin-top: 12px;
+  font-size: 15px;
+  color: #6F6F6F;
+  letter-spacing: 0;
+  transition: all 0.3s;
+}
+footer .tocobo-footer .footer-menu ul li span {
+  display: block;
+  font-size: 18px;
+  color: #DC272D;
+  letter-spacing: 0;
+  margin-bottom: 25px;
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+}
+footer .tocobo-footer .cs-box ul .cs {
+  font-size: 18px;
+  font-weight: 400;
+  color: #DC272D;
+  letter-spacing: 0;
+  font-family: "Source Serif Pro", serif;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+footer .tocobo-footer .cs-box ul .number {
+  font-size: 30px;
+  margin-bottom: 17px;
+  font-weight: 400;
+  color: #DC272D;
+  letter-spacing: 0;
+}
+footer .tocobo-footer .cs-box ul .info {
+  display: block;
+  font-size: 14px;
+  color: #5B5B5B;
+  line-height: 22px;
+}
+footer .tocobo-footer .cs-box ul button {
+  position: relative;
+  z-index: 33;
+  display: inline-block;
+  width: auto;
+  margin-top: 20px;
+  padding: 14px 72px 13px;
+  letter-spacing: 0;
+  background: #fff;
+  border: 1px solid #DC272D;
+  border-radius: 60px;
+  text-align: center;
+  font-size: 13px;
+  color: #DC272D;
+  transition: all 0.5s;
+}
+footer .tocobo-footer .cs-box ul button:hover {
+  content: "";
+  color: #fff;
+  background: #DC272D;
+  transition: 0.7s;
+}
+footer .tocobo-footer .cs-box .sns-btn button {
+  border: none;
+  background-color: transparent;
+  padding: 141px 0 0;
+  margin-right: 25px;
+}/*# sourceMappingURL=faq.css.map */

@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+  <title>TOCOBO-main</title>
+  <link rel="stylesheet" href="./js/slide.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-container01">
+      <a href="./index.html" title="toboco 메인 페이지로 이동">
+        <img src="./04_illustrations/Logos/logo.svg" alt="toboco 로고 이미지">
+      </a>
+    </div>
+
+    <div class="header-container02">
+      <nav class="menu01">
+        <ul>
+          <li><a href="./02brand.html" title="brand로 이동">Brand</a></li>
+          <li><a href="./03promotion.html" title="Promotion로 이동">Promotion</a></li>
+          <li><a href="./04community.html" title="Community로 이동">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon">
+        <button>
+          <span><img src="./04_illustrations/icons/icon_language 오후 4.23.50.svg" alt=""></span>
+          <span><img src="./04_illustrations/icons/icon_search 오후 4.23.50.svg" alt=""></span>
+          <span><img src="./04_illustrations/icons/icon_myp 오후 4.23.50.svg" alt=""></span>
+          <span><img src="./04_illustrations/icons/icon_cart 오후 4.23.50.svg" alt=""></span>
+          <span class="cart-count">
+            <p class="count-num">0</p>
+          </span>
+        </button>
+      </div>
+    </div>
+
+  </header>
+
+  <main>
+    <div class="a swiper mySwiper01">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./03_images/Background/main-banner01.png" class="content-mo">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./03_images/Background/main-banner02.png" class="content-mo02">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./03_images/Background/main-banner03.png" class="content-mo03">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="./03_images/Background/main-banner04.png" class="content-mo04">
+          </a>
+        </div>
+
+      </div>
+      <div class="swiper-button-next">
+        <img src="./04_illustrations/icons/slide_menu_arrow_left.png">
+      </div>
+      <div class="swiper-button-prev">
+        <img src=".//04_illustrations/icons/slide_menu_arrow_left.png">
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper01", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+
+    <div class="banner-text">
+      <h1>Crystal Brightening<br>
+        Eye Gel Cream</h1>
+      <p>눈가 탄력을 세우고 수정처럼 빛나는 브라이트닝 아이 젤 크림✨</p>
+      <button class="banner-button">Discover More</button>
+    </div>
+    </div>
+
+
+    <div class="hello-tocobo">
+      <img src="./03_images/Background/tocobo_intro_2021.gif" alt="" width="630px" height="630px">
+
+      <div class="hello-text">
+        <p class="text01">Hello❤️ We are TOCOBO!</p>
+        <h2>Follow<br>
+          Your Intuition</h2>
+        <p class="text02">토코보는 본질을 중시하며, 직관력을 바탕으로 만든 브랜드입니다.<br>
+          당신의 직감이 YES를 외친다면, 고민없이 토코보를 선택하세요.<br>
+          우리의 인사이트로 탄탄하게 기획된 제품을 보내드립니다.</p>
+        <button>MEET TOCOBO</button>
+      </div>
+    </div>
+
+    <!-- <div class="contain">
+      <div class="b swiper mySwiper02">
+        <div class="collection-title">
+          <h2>TOBOCO COLLECTION</h2>
+          <p>Shop By Category</p>
+        </div>
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">탄력을 채워주는 광채 아이크림</p>
+              <p class="t01">Collagen Brightening Eye Gel Cream</p>
+              <p class="t02">콜라겐 브라이트닝 아이 젤 크림</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/eyecream.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="product-text02">
+              <p class="ml">30ml</p>
+              <div class="product-text03">
+                <p class="sale">20%</p>
+                <p class="pay">20,000won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">촉촉하게 빛나는 글로시 립밤</p>
+              <p class="t01">Glow&Glass Tinted Lip Balm</p>
+              <p class="t02">글로우&글래스 틴티드 립밤</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/lipbalm.png" alt="">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="product-text02">
+              <p class="ml">3.4g</p>
+              <div class="product-text03">
+                <p class="sale">10%</p>
+                <p class="pay">12,600won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">소프트 매트 크림 립밤</p>
+              <p class="t01">Powder Cream Lip Balm</p>
+              <p class="t02">파우더 크림 립밤</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/creamlipbalm.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="product-text02">
+              <p class="ml">3.5g</p>
+              <div class="product-text03">
+                <p class="sale">10%</p>
+                <p class="pay">12,600won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">고농축 고보습 립밤</p>
+              <p class="t01">Vitamin Nourishing Lip Balm</p>
+              <p class="t02">비타민 너리싱 립밤</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/vitalip.png" alt="">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="product-text02">
+              <p class="ml">3.5g</p>
+              <div class="product-text03">
+                <p class="sale">10%</p>
+                <p class="pay">12,600won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">비타민 모공 수축 토너</p>
+              <p class="t01">Vita Berry Pore Toner</p>
+              <p class="t02">비타 베리 포어 토너</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/poretoner.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="product-text02">
+              <p class="ml">150ml</p>
+              <div class="product-text03">
+                <p class="pay">20,000won</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">저자극 비건 선크림</p>
+              <p class="t01">Bio Watery Sun Cream</p>
+              <p class="t02">바이오 워터리 선 크림</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/suncream.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="product-text02">
+              <p class="ml">50ml</p>
+              <div class="product-text03">
+                <p class="sale">10%</p>
+                <p class="pay">21,600won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">저자극 비건 선스틱</p>
+              <p class="t01">Cotton Soft Sun Stick</p>
+              <p class="t02">코튼 소프트 선 스틱</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/sunstick.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="product-text02">
+              <p class="ml">19g</p>
+              <div class="product-text03">
+                <p class="sale">10%</p>
+                <p class="pay">19,800won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">저자극 미세 버블 클렌징 폼</p>
+              <p class="t01">Coconut Clay Cleansing Foam</p>
+              <p class="t02">코코넛 클레이 클렌징 폼</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/cleansing.png" alt="">
+                </a>
+              </div>
+            </div>
+
+            <div class="product-text02">
+              <p class="ml">150ml</p>
+              <div class="product-text03">
+                <p class="pay">12,000won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">저자극 데일리 각질 케어 토너</p>
+              <p class="t01">AHA BHA Lemon TOner</p>
+              <p class="t02">아하 바하 레몬 토너</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/lemontoner.png" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="product-text02">
+              <p class="ml">150ml</p>
+              <div class="product-text03">
+                <p class="pay">25,000won</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="product-text">
+              <p class="btn">피부 장벽 강화 유산균 에센스</p>
+              <p class="t01">Bifida Biome Essence</p>
+              <p class="t02">비피다 바이옴 에센스</p>
+            </div>
+            <div class="img-box">
+              <div class="product-img">
+                <a href="#" title="">
+                  <img src="../03_images/products/743706bcbf5a5605743534cb38bf3d3f.png" alt="">
+                </a>
+              </div>
+            </div>
+
+
+            <div class="product-text02">
+              <p class="ml">50ml</p>
+              <div class="product-text03">
+                <p class="pay">32,000won</p>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+        <div class="swiper-scrollbar"></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+    </div> -->
+
+    <div class="container-2">
+      <div class="collection-title">
+        <h2>TOBOCO COLLECTION</h2>
+        <p>Shop By Category</p>
+      </div>
+      <div class="w-1280">
+        <div class="con-wrap">
+          <div class="swiper my-swiper">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">탄력을 채워주는 광채 아이크림</p>
+                  <p class="t01">Collagen Brightening Eye Gel Cream</p>
+                  <p class="t02">콜라겐 브라이트닝 아이 젤 크림</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/eyecream.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">30ml</p>
+                  <div class="product-text03">
+                    <p class="sale">20%</p>
+                    <p class="pay">20,000won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">촉촉하게 빛나는 글로시 립밤</p>
+                  <p class="t01">Glow&Glass Tinted Lip Balm</p>
+                  <p class="t02">글로우&글래스 틴티드 립밤</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/lipbalm.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">3.4g</p>
+                  <div class="product-text03">
+                    <p class="sale">10%</p>
+                    <p class="pay">12,600won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">소프트 매트 크림 립밤</p>
+                  <p class="t01">Powder Cream Lip Balm</p>
+                  <p class="t02">파우더 크림 립밤</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/creamlipbalm.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">3.5g</p>
+                  <div class="product-text03">
+                    <p class="sale">10%</p>
+                    <p class="pay">12,600won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">고농축 고보습 립밤</p>
+                  <p class="t01">Vitamin Nourishing Lip Balm</p>
+                  <p class="t02">비타민 너리싱 립밤</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/vitalip.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">3.5g</p>
+                  <div class="product-text03">
+                    <p class="sale">10%</p>
+                    <p class="pay">12,600won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">비타민 모공 수축 토너</p>
+                  <p class="t01">Vita Berry Pore Toner</p>
+                  <p class="t02">비타 베리 포어 토너</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/poretoner.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">150ml</p>
+                  <div class="product-text03">
+                    <p class="pay">20,000won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">저자극 비건 선크림</p>
+                  <p class="t01">Bio Watery Sun Cream</p>
+                  <p class="t02">바이오 워터리 선 크림</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/suncream.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">50ml</p>
+                  <div class="product-text03">
+                    <p class="sale">10%</p>
+                    <p class="pay">21,600won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">저자극 비건 선스틱</p>
+                  <p class="t01">Cotton Soft Sun Stick</p>
+                  <p class="t02">코튼 소프트 선 스틱</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/sunstick.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">19g</p>
+                  <div class="product-text03">
+                    <p class="sale">10%</p>
+                    <p class="pay">19,800won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">저자극 미세 버블 클렌징 폼</p>
+                  <p class="t01">Coconut Clay Cleansing Foam</p>
+                  <p class="t02">코코넛 클레이 클렌징 폼</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/cleansing.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">150ml</p>
+                  <div class="product-text03">
+                    <p class="pay">12,000won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">저자극 데일리 각질 케어 토너</p>
+                  <p class="t01">AHA BHA Lemon TOner</p>
+                  <p class="t02">아하 바하 레몬 토너</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/lemontoner.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">150ml</p>
+                  <div class="product-text03">
+                    <p class="pay">25,000won</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="product-text">
+                  <p class="btn">피부 장벽 강화 유산균 에센스</p>
+                  <p class="t01">Bifida Biome Essence</p>
+                  <p class="t02">비피다 바이옴 에센스</p>
+                </div>
+                <div class="img-box">
+                  <div class="product-img">
+                    <a href="#" title="">
+                      <img src="./03_images/products/743706bcbf5a5605743534cb38bf3d3f.png" alt="">
+                    </a>
+                  </div>
+                </div>
+                <div class="product-text02">
+                  <p class="ml">50ml</p>
+                  <div class="product-text03">
+                    <p class="pay">32,000won</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // var swiper = new Swiper(".mySwiper02", {
+      //   slidesPerView: 3,
+      //   spaceBetween: 30,
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev",
+      //   },
+      //   scrollbar: {
+      //     el: ".swiper-scrollbar",
+      //   }
+      // });
+
+      //sm-swiper
+      var swiper = new Swiper(".container-2 .swiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        slidesPerView: 1.3,
+        autoHeight: true,
+        spaceBetween: 20,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+          }
+        }
+      });
+
+    </script>
+
+    <div class="vegan-container">
+      <div class="vegan-text">
+        <h2>Vegan Skincare</h2>
+        <p>피부에 건강한 영향력을 전달하고 꼭 필요한 성분만을 담아<br>
+          놀라운 변화를 선사하는 비건 스킨케어 브랜드 토코보</p>
+        <button>MEET TOCOBO</button>
+      </div>
+
+      <div class="c swiper mySwiper03">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="#" title=""><img src="./03_images/Background/vegan01.png" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title=""><img src="./03_images/Background/vegan02.png" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title=""><img src="./03_images/Background/vegan03.png" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title=""><img src="./03_images/Background/vegan04.png" alt=""></a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" title=""><img src="./03_images/Background/vegan05.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".vegan-container .swiper", {
+          autoHeight: true,
+          spaceBetween: 0,
+          loop: true,
+          slidesPerView: 1,
+          breakpoints: {
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            }
+          }
+
+        });
+      </script>
+    </div>
+
+    <div class="ani00">
+      <div class="d-box" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-offset="100">
+
+
+        <div class="d swiper mySwiper04">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./04_illustrations/Logos/star.png" alt="">
+              <h2>Customer Review</h2>
+              <p class="review-text">"피부가 예민한 편인데 트러블 없이 잘 맞아요"</p>
+              <p class="info">
+                스킨-세럼-아이크림-로션-크림 식으로 스킨케어 하는데<br>
+
+                그래도 건조해서 알아보다가 구입하게 됐어요~<br>
+
+                에센스 하나 추가했을 뿐인데 하루종일 얼굴에 수분감이 다르네요!
+              </p>
+              <p class="date">Bifida Biome Essence / 0119*******</p>
+            </div>
+            <div class="swiper-slide">
+              <img src="./04_illustrations/Logos/star.png" alt="">
+              <h2>Customer Review</h2>
+              <p class="review-text">"피부가 예민한 편인데 트러블 없이 잘 맞아요"</p>
+              <p class="info">
+                스킨-세럼-아이크림-로션-크림 식으로 스킨케어 하는데<br>
+
+                그래도 건조해서 알아보다가 구입하게 됐어요~<br>
+
+                에센스 하나 추가했을 뿐인데 하루종일 얼굴에 수분감이 다르네요!
+              </p>
+              <p class="date">Bifida Biome Essence / 0119*******</p>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="./04_illustrations/Logos/star.png" alt="">
+              <h2>Customer Review</h2>
+              <p class="review-text">"피부가 예민한 편인데 트러블 없이 잘 맞아요"</p>
+              <p class="info">
+                스킨-세럼-아이크림-로션-크림 식으로 스킨케어 하는데<br>
+
+                그래도 건조해서 알아보다가 구입하게 됐어요~<br>
+
+                에센스 하나 추가했을 뿐인데 하루종일 얼굴에 수분감이 다르네요!
+              </p>
+              <p class="date">Bifida Biome Essence / 0119*******</p>
+
+            </div>
+            <div class="swiper-slide">
+              <img src="./04_illustrations/Logos/star.png" alt="">
+              <h2>Customer Review</h2>
+              <p class="review-text">"피부가 예민한 편인데 트러블 없이 잘 맞아요"</p>
+              <p class="info">
+                스킨-세럼-아이크림-로션-크림 식으로 스킨케어 하는데<br>
+
+                그래도 건조해서 알아보다가 구입하게 됐어요~<br>
+
+                에센스 하나 추가했을 뿐인데 하루종일 얼굴에 수분감이 다르네요!
+              </p>
+              <p class="date">Bifida Biome Essence / 0119*******</p>
+
+            </div>
+
+
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper04", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          }
+        }
+      });
+    </script>
+
+    <script>
+      window.onload = function () {
+        const elD = document.querySelector('.d-box'),
+          elDswiper = document.querySelector('.d-box d');
+
+        console.log(
+          elD.offsetTop
+        )
+      };
+
+
+    </script>
+
+    <div class="tocobo-insta" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false" data-aos-offset="300">
+      <div class="insta-text">
+        <h2>Instagram</h2>
+        <p>@tocobo_offical</p>
+      </div>
+
+      <div class="insta-img">
+        <a href="#" class="d1"></a>
+        <a href="#" class="d2"></a>
+        <a href="#" class="d3"></a>
+        <a href="#" class="d4"></a>
+        <a href="#" class="d5"></a>
+        <a href="#" class="d6"></a>
+        <a href="#" class="d7"></a>
+        <a href="#" class="d8"></a>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="tocobo-footer">
+      <div class="tocobo-official">
+        <a href="#" title="">
+          <img src="./04_illustrations/Logos/logo.svg" alt="">
+        </a>
+        <ul>
+          <li>주식회사 픽톤 대표 | 안주영</li>
+          <li>주소 | 03966 서울특별시 마포구 월드컵북로15길 45 (성산동) .</li>
+          <li>사업자등록번호 | 196-81-02410 [사업자정보확인]</li>
+          <li>통신판매업신고: 제2021-서울마포-2994호 개인정보보호책임자 | 안주영</li>
+          <li>EL : 02-6352-2410 E-MAIL | help@thepicton.com</li>
+          <li><span>COPYRIGHT© 2021 TOCOBO. ALL RIGHT RESERVED.<br>
+              >HOSTING BY 카페24㈜ DESIGN BY 디자인위브</span></li>
+          <li>
+            <nav class="cs-btn">
+              <button>이용약관</button>
+              <button>개인정보처리방침</button>
+              <button>이용안내</button>
+            </nav>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-menu">
+        <ul>
+          <li><span>Brand</span></li>
+          <li>Brand Story</li>
+          <li>Collection</li>
+        </ul>
+
+        <ul>
+          <li><span>Shop</span></li>
+          <li>All Product</li>
+          <li>Cleansing</li>
+          <li>Skincare</li>
+          <li>Sun</li>
+          <li>Lip</li>
+          <li>Set/Etc</li>
+        </ul>
+
+        <ul>
+          <li><span>Promotion</span></li>
+          <li>Promotion</li>
+        </ul>
+
+        <ul>
+          <li><span>Community</span></li>
+          <li>Notice</li>
+          <li>FAQ</li>
+          <li>Review</li>
+          <li>1:1CS</li>
+        </ul>
+      </div>
+
+
+      <div class="cs-box">
+        <ul>
+          <li class="cs">Customer Center</li>
+          <li class="number">02-6352-2410</li>
+          <li class="info">AM 10:00-PM 5:00(Lunch 12:00-13:00)<br>
+            토, 일요일 및 공휴일 휴무</li>
+          <li><button>1:1 TALK</button></li>
+        </ul>
+
+        <nav class="sns-btn">
+          <button><img src="./04_illustrations/icons/kakao.svg" alt="" width="25px"></button>
+          <button><img src="./04_illustrations/icons/insta.svg" alt=""></button>
+          <button><img src="./04_illustrations/icons/youtube.svg" alt=""></button>
+        </nav>
+
+      </div>
+    </div>
+
+
+
+  </footer>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
