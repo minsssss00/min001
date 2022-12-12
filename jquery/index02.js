@@ -1,7 +1,7 @@
 $('body').prepend('<header>');
 
 
-$('header').load('./aaa.html header>div',head);
+$('header').load('./basic-header.html header>div',head);
 
 function head(){
     $('header a').click(function(){

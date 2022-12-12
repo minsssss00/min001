@@ -2,5 +2,5 @@ $('body').prepend('<header>');
 $('body').append('<footer>');
 
 
-$('header').load('./aaa.html header>div');
-$('footer').load('./aaa.html footer>div');
+$('header').load('./basic-header.html header>div');
+$('footer').load('./basic-header.html footer>div');

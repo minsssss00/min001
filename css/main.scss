@@ -709,6 +709,7 @@ main {
       transform: scale(0.9);
 l
     }
+  
   }
 
 }
@@ -831,11 +832,11 @@ l
       transform: translateX(700px);
     }
   }
-
   [data-aos^=fade][data-aos^=fade].aos-animate {
     opacity: 1;
     transform: translateY(15%);
   }
+
 }
 
 .tocobo-insta {

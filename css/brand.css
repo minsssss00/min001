@@ -41,6 +41,9 @@ header .header-container02 .menu01 ul li a {
   font-size: 18px;
   margin-right: 40px;
 }
+header .header-container02 .icon {
+  filter: brightness(100);
+}
 header .header-container02 .icon button {
   background: transparent;
   border: none;
