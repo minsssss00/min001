@@ -31,12 +31,25 @@ header .header-container02 .menu01 {
 header .header-container02 .menu01 ul {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 header .header-container02 .menu01 ul li a {
+  position: relative;
   color: #DC272D;
   text-decoration: none;
   font-size: 18px;
   margin-right: 40px;
+}
+header .header-container02 .menu01 ul li a.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1.5px;
+  background: #DC272D;
+}
+header .header-container02 .menu01 ul li a:hover::after {
+  width: 100%;
 }
 header .header-container02 .icon button {
   background: transparent;

@@ -34,28 +34,41 @@ header .header-container02 .menu01 {
 header .header-container02 .menu01 ul {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 header .header-container02 .menu01 ul li a {
+  position: relative;
   color: #fff;
   text-decoration: none;
   font-size: 18px;
   margin-right: 40px;
 }
-header .header-container02 .icon {
+header .header-container02 .menu01 ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1.5px;
+  background: #fff;
+}
+header .header-container02 .menu01 ul li a:hover::after, header .header-container02 .menu01 ul li a.active::after {
+  width: 100%;
+}
+header .icon {
   filter: brightness(100);
 }
-header .header-container02 .icon button {
+header .icon button {
   background: transparent;
   border: none;
   display: flex;
   width: 262px;
   justify-content: space-between;
 }
-header .header-container02 .icon span img {
+header .icon span img {
   padding: 0px 10px 0px 0px;
   cursor: pointer;
 }
-header .header-container02 .icon .cart-count {
+header .icon .cart-count {
   display: inline-block;
   width: 26px;
   height: 26px;

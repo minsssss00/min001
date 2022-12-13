@@ -37,16 +37,35 @@ header {
     .menu01 {
       height: 105px;
 
+
       ul {
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         li {
+  
+      
           a {
+            position: relative;
             color: #DC272D;
             text-decoration: none;
             font-size: 18px;
             margin-right: 40px;
+            &.active::after{
+              content: '';
+              display: block;
+              position: absolute;
+              left: 0;
+              height: 1.5px;
+              background: #DC272D;
+              
+            }
+
+            &:hover::after {
+              width: 100%;
+              
+            }
           }
         }
       }

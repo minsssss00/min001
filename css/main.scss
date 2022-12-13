@@ -25,7 +25,6 @@ header {
       max-width: 194px;
       height: 35px;
 
-      img {}
     }
   }
 
@@ -43,20 +42,30 @@ header {
       ul {
         display: flex;
         justify-content: space-between;
+        width: 100%;
 
         li {
-
+  
+      
           a {
+            position: relative;
             color: #DC272D;
             text-decoration: none;
             font-size: 18px;
             margin-right: 40px;
+            &::after{
+              content: '';
+              display: block;
+              position: absolute;
+              left: 0;
+              height: 1.5px;
+              background: #DC272D;
+              
+            }
 
-            &:hover {
-              border-bottom: 2px solid #DC272D;
-              transition: 3ms;
-              animation-name: menu-liner;
-              animation-duration: 3ms;
+            &:hover::after, &.active::after {
+              width: 100%;
+              
             }
           }
         }
@@ -605,7 +614,7 @@ main {
     transform: translateX(350px);
   }
 
-}
+
 
 .vegan-container {
   overflow: hidden;
@@ -707,10 +716,12 @@ main {
       width: 750px;
       object-fit: cover;
       transform: scale(0.9);
-l
-    }
+
+    
+
   
   }
+  
 
 }
 
@@ -837,6 +848,7 @@ l
     transform: translateY(15%);
   }
 
+}
 }
 
 .tocobo-insta {
@@ -1009,7 +1021,7 @@ l
     border: 1px solid #231F20;
   }
 }
-
+}
 footer {
   border-top: 1px solid #DC272D;
   box-sizing: border-box;
@@ -2902,4 +2914,5 @@ main .a .swiper-button-prev, main .a .swiper-rtl .swiper-button-next {
   top: auto;
   filter: none;
 }
+
 }

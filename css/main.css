@@ -36,20 +36,25 @@ header .header-container02 .menu01 {
 header .header-container02 .menu01 ul {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 header .header-container02 .menu01 ul li a {
+  position: relative;
   color: #DC272D;
   text-decoration: none;
   font-size: 18px;
   margin-right: 40px;
 }
-header .header-container02 .menu01 ul li a:hover {
-  border-bottom: 2px solid #DC272D;
-  transition: 3ms;
-  -webkit-animation-name: menu-liner;
-          animation-name: menu-liner;
-  -webkit-animation-duration: 3ms;
-          animation-duration: 3ms;
+header .header-container02 .menu01 ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  height: 1.5px;
+  background: #DC272D;
+}
+header .header-container02 .menu01 ul li a:hover::after, header .header-container02 .menu01 ul li a.active::after {
+  width: 100%;
 }
 header .header-container02 .icon button {
   background: transparent;
@@ -480,8 +485,7 @@ main .swiper-rtl .swiper-button-next:after {
   content: "prev";
   transform: translateX(350px);
 }
-
-.vegan-container {
+main .vegan-container {
   overflow: hidden;
   margin: 0 auto;
   width: 100%;
@@ -492,7 +496,7 @@ main .swiper-rtl .swiper-button-next:after {
   margin-top: 130px;
   display: flex;
 }
-.vegan-container .vegan-text {
+main .vegan-container .vegan-text {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -501,20 +505,20 @@ main .swiper-rtl .swiper-button-next:after {
   align-items: flex-start;
   left: 20%;
 }
-.vegan-container .vegan-text h2 {
+main .vegan-container .vegan-text h2 {
   font-size: 55px;
   color: #009BDE;
   line-height: 1;
   font-weight: 400;
   letter-spacing: 0;
 }
-.vegan-container .vegan-text p {
+main .vegan-container .vegan-text p {
   font-size: 16px;
   color: #202020;
   line-height: 26px;
   margin-top: 25px;
 }
-.vegan-container .vegan-text button {
+main .vegan-container .vegan-text button {
   display: inline-block;
   margin-top: 60px;
   padding: 17px 56px;
@@ -527,25 +531,25 @@ main .swiper-rtl .swiper-button-next:after {
   background: linear-gradient(to bottom, #51CAFF, #009BDE);
   cursor: pointer;
 }
-.vegan-container .vegan-text button:hover {
+main .vegan-container .vegan-text button:hover {
   content: "";
   background: #fff;
   color: #009BDE;
   border: 1px solid #009BDE;
   transition: 0.7s;
 }
-.vegan-container .c {
+main .vegan-container .c {
   width: 66%;
   height: 596px;
   position: absolute;
   top: 0;
   left: 50%;
 }
-.vegan-container .c .swiper {
+main .vegan-container .c .swiper {
   width: 80%;
   height: 100%;
 }
-.vegan-container .c .swiper-slide {
+main .vegan-container .c .swiper-slide {
   text-align: center;
   font-size: 18px;
   justify-content: flex-start;
@@ -555,7 +559,7 @@ main .swiper-rtl .swiper-button-next:after {
   -ms-flex-pack: center;
   align-items: center;
 }
-.vegan-container .c .swiper-slide img {
+main .vegan-container .c .swiper-slide img {
   display: block;
   height: 510px;
   width: 750px;
@@ -563,8 +567,7 @@ main .swiper-rtl .swiper-button-next:after {
      object-fit: cover;
   transform: scale(0.9);
 }
-
-.ani00 {
+main .vegan-container .ani00 {
   transform: translateY(-100px);
   background-color: #EEF8FF;
   overflow: hidden;
@@ -573,12 +576,12 @@ main .swiper-rtl .swiper-button-next:after {
   display: flex;
   align-items: center;
 }
-.ani00 .d-box {
+main .vegan-container .ani00 .d-box {
   width: 100%;
   height: 60%;
   background: transparent;
 }
-.ani00 .d-box .d {
+main .vegan-container .ani00 .d-box .d {
   width: 100%;
   transform: translateX(-12%);
   height: 330px;
@@ -594,18 +597,18 @@ main .swiper-rtl .swiper-button-next:after {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.ani00 .d-box .d .swiper {
+main .vegan-container .ani00 .d-box .d .swiper {
   width: 100%;
   height: 100%;
 }
-.ani00 .d-box .d .swiper-wrapper {
+main .vegan-container .ani00 .d-box .d .swiper-wrapper {
   display: flex;
   justify-content: space-between;
   width: 100%;
   padding: 0;
   background-color: #EEF8FF;
 }
-.ani00 .d-box .d .swiper-wrapper h2 {
+main .vegan-container .ani00 .d-box .d .swiper-wrapper h2 {
   font-size: 55px;
   color: #DC272D;
   font-weight: 400;
@@ -613,18 +616,18 @@ main .swiper-rtl .swiper-button-next:after {
   letter-spacing: 0.02em;
   margin-bottom: 25px;
 }
-.ani00 .d-box .d .swiper-wrapper .review-text {
+main .vegan-container .ani00 .d-box .d .swiper-wrapper .review-text {
   font-size: 20px;
   color: #231F20;
   font-weight: 500;
 }
-.ani00 .d-box .d .swiper-wrapper .info {
+main .vegan-container .ani00 .d-box .d .swiper-wrapper .info {
   font-size: 15px;
   color: #6F6F6F;
   line-height: 25px;
   margin-top: 20px;
 }
-.ani00 .d-box .d .swiper-wrapper .date {
+main .vegan-container .ani00 .d-box .d .swiper-wrapper .date {
   font-size: 15px;
   color: #231F20;
   font-family: "Source Serif Pro", serif;
@@ -632,7 +635,7 @@ main .swiper-rtl .swiper-button-next:after {
   margin-top: 30px;
   letter-spacing: 0;
 }
-.ani00 .d-box .d .swiper-slide {
+main .vegan-container .ani00 .d-box .d .swiper-slide {
   text-align: center;
   font-size: 18px;
   background: transparent;
@@ -643,31 +646,30 @@ main .swiper-rtl .swiper-button-next:after {
   justify-content: center;
   align-items: center;
 }
-.ani00 .d-box .swiper-button-next:after,
-.ani00 .d-box .swiper-rtl .swiper-button-prev:after {
+main .vegan-container .ani00 .d-box .swiper-button-next:after,
+main .vegan-container .ani00 .d-box .swiper-rtl .swiper-button-prev:after {
   content: "next";
   transform: translateX(-350px);
 }
-.ani00 .d-box .swiper-button-prev:after,
-.ani00 .d-box .swiper-rtl .swiper-button-next:after {
+main .vegan-container .ani00 .d-box .swiper-button-prev:after,
+main .vegan-container .ani00 .d-box .swiper-rtl .swiper-button-next:after {
   content: "prev";
   transform: translateX(700px);
 }
-.ani00 [data-aos^=fade][data-aos^=fade].aos-animate {
+main .vegan-container .ani00 [data-aos^=fade][data-aos^=fade].aos-animate {
   opacity: 1;
   transform: translateY(15%);
 }
-
-.tocobo-insta {
+main .tocobo-insta {
   margin: 0 auto;
   width: 1280px;
   padding-top: 130px;
 }
-.tocobo-insta .insta-text {
+main .tocobo-insta .insta-text {
   margin: 0 auto;
   text-align: left;
 }
-.tocobo-insta .insta-text h2 {
+main .tocobo-insta .insta-text h2 {
   font-size: 55px;
   color: #DC272D;
   line-height: 1;
@@ -675,7 +677,7 @@ main .swiper-rtl .swiper-button-next:after {
   font-weight: 400;
   letter-spacing: 0px;
 }
-.tocobo-insta .insta-text p {
+main .tocobo-insta .insta-text p {
   font-size: 20px;
   color: #6F6F6F;
   line-height: 1;
@@ -684,7 +686,7 @@ main .swiper-rtl .swiper-button-next:after {
   letter-spacing: 0px;
   font-style: italic;
 }
-.tocobo-insta .insta-img {
+main .tocobo-insta .insta-img {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -702,7 +704,7 @@ main .swiper-rtl .swiper-button-next:after {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
-.tocobo-insta .insta-img .d1 {
+main .tocobo-insta .insta-img .d1 {
   display: block;
   width: 150px;
   height: 150px;
@@ -710,7 +712,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d2 {
+main .tocobo-insta .insta-img .d2 {
   display: block;
   width: 150px;
   height: 150px;
@@ -718,7 +720,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d3 {
+main .tocobo-insta .insta-img .d3 {
   display: block;
   width: 150px;
   height: 150px;
@@ -726,7 +728,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d4 {
+main .tocobo-insta .insta-img .d4 {
   display: block;
   width: 150px;
   height: 150px;
@@ -734,7 +736,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d5 {
+main .tocobo-insta .insta-img .d5 {
   display: block;
   width: 150px;
   height: 150px;
@@ -742,7 +744,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d6 {
+main .tocobo-insta .insta-img .d6 {
   display: block;
   width: 150px;
   height: 150px;
@@ -750,7 +752,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d7 {
+main .tocobo-insta .insta-img .d7 {
   display: block;
   width: 150px;
   height: 150px;
@@ -758,7 +760,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-.tocobo-insta .insta-img .d8 {
+main .tocobo-insta .insta-img .d8 {
   display: block;
   width: 150px;
   height: 150px;
@@ -766,8 +768,7 @@ main .swiper-rtl .swiper-button-next:after {
   background-size: 150px;
   background-repeat: no-repeat;
 }
-
-.banner-text {
+main .banner-text {
   position: absolute;
   top: 10%;
   transform: translateY(-100%);
@@ -776,17 +777,17 @@ main .swiper-rtl .swiper-button-next:after {
   margin-left: 150px;
   z-index: 2;
 }
-.banner-text h1 {
+main .banner-text h1 {
   font-size: 73px;
   line-height: 85px;
   color: #DC272D;
 }
-.banner-text p {
+main .banner-text p {
   font-size: 21px;
   color: #DC272D;
   margin: 40px 0 0;
 }
-.banner-text .banner-button {
+main .banner-text .banner-button {
   width: 243px;
   height: 50px;
   background-color: #FCB3E1;
@@ -2105,19 +2106,19 @@ main .contain .swiper-rtl .swiper-button-next:after {
   }
   main .a .swiper-wrapper .swiper-slide a .content-mo {
     height: 100%;
-    content: url("../03_images/Background/mo_main01.png");
+    content: url("./03_images/Background/mo_main01.png");
   }
   main .a .swiper-wrapper .swiper-slide a .content-mo02 {
     height: 100%;
-    content: url("../03_images/Background/mo_main02.png");
+    content: url("./03_images/Background/mo_main02.png");
   }
   main .a .swiper-wrapper .swiper-slide a .content-mo03 {
     height: 100%;
-    content: url("../03_images/Background/mo_main03.png");
+    content: url("./03_images/Background/mo_main03.png");
   }
   main .a .swiper-wrapper .swiper-slide a .content-mo04 {
     height: 100%;
-    content: url("../03_images/Background/mo_main04.png");
+    content: url("./03_images/Background/mo_main04.png");
   }
   main .a .swiper-pagination span {
     font-style: none;
