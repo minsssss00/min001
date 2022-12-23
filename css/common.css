@@ -66,7 +66,6 @@ details,
 embed,
 figure,
 figcaption,
-footer,
 header,
 hgroup,
 menu,
@@ -81,56 +80,30 @@ audio,
 video {
     margin: 0;
     padding: 0;
-    border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    font-family: 'Nanum Gothic';
-    text-decoration: none;
+    font-family: "Circular Std","Noto Sans KR";
 
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-body {
-    line-height: 1;
-}
-
+a{text-decoration: none;}
 ol,
 ul {
     list-style: none;
 }
 
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track-piece {
+    background-color: #edefef;
+  }
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: red;
+  }
+  
 
 @font-face {
     font-family: "Nanum Gothic";
@@ -193,3 +166,98 @@ table {
         width: 100%;
     }
 }
+
+.popmenu {
+  display: none;
+}
+.popmenu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #EEF8FF;
+    z-index: 9999;
+  }
+  .popmenu .closeBtn {
+    position: absolute;
+    top: 35px;
+    right: 20px;
+  }
+  .popmenu .closeBtn img {
+    width: 47px;
+  }
+  .popmenu .moicon {
+    padding: 40px 20px 0;
+  }
+  .popmenu .moicon button {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    border: none;
+    background: transparent;
+  }
+  .popmenu .moicon button span img {
+    width: 25px;
+    margin-right: 15px;
+  }
+  .popmenu .moicon button span:nth-of-type(4) {
+    display: flex;
+    align-items: center;
+  }
+  .popmenu .moicon button span:nth-of-type(4) img {
+    margin-right: 5px;
+  }
+  .popmenu .moicon button span:nth-of-type(4) .mocart-count {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #DC272D;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0;
+    font-size: 11px;
+  }
+  .popmenu .moicon button span:nth-of-type(4) .mocart-count .mocount-num {
+    margin: 0;
+    color: #fff;
+    font-size: 11px;
+    line-height: 20px;
+  }
+  .popmenu .momenu01 {
+    padding: 0 20px;
+    margin-top: 52px;
+    position: relative;
+  }
+  .popmenu .momenu01 ul li {
+    margin-top: 25px;
+  }
+  .popmenu .momenu01 ul li a {
+    font-family: "Circular Std", "Noto Sans KR";
+    font-size: 33px;
+    color: #DC272D;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  .popmenu .momenu02 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0 20px 30px;
+    bottom: 0;
+  }
+  .popmenu .momenu02 ul li {
+    margin-top: 16px;
+  }
+  .popmenu .momenu02 ul li a {
+    font-family: "Circular Std", "Noto Sans KR";
+    font-size: 16px;
+    color: #231F20;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: 0;
+  }

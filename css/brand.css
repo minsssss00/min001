@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url(./common.css);
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap");
 header {
@@ -96,6 +95,7 @@ main .scroll-btn {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  opacity: 0;
 }
 main .scroll-btn button {
   font-size: 22px;
@@ -140,6 +140,9 @@ main .main-container01 .sub-text .tag {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 400%);
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(-40%, 300%);
 }
 main .main-container01 .sub-text .tag p {
   padding-bottom: 10px;
@@ -150,6 +153,10 @@ main .main-container01 .sub-text .tag p {
   font-family: "Source Serif Pro", serif;
   font-style: italic;
 }
+main .main-container01 .sub-text .tag.active {
+  opacity: 1;
+  transform: translateY(-40%, 300%);
+}
 main .main-container02 {
   width: 100%;
   height: 100vh;
@@ -158,27 +165,21 @@ main .main-container02 {
 main .main-container02 .text-box {
   position: absolute;
   top: 40%;
-  transform: translate(-50%, -50%);
   display: block;
   width: 100%;
-  display: block;
   color: #DC272D;
   line-height: 44px;
   font-weight: 500;
-  letter-spacing: -0.05em;
   text-align: center;
   font-family: "Circular Std", "Noto Sans KR";
   letter-spacing: -0.05em;
-  -webkit-animation-name: text1;
-          animation-name: text1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); /* 수치변형함수 */
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(20%);
+}
+main .main-container02 .text-box.active {
+  opacity: 1;
+  transform: translateY(-10%);
 }
 main .main-container02 .text-box .title {
   font-size: 23px;
@@ -249,16 +250,9 @@ main .main-container03 .circles .circle03 .circle-text01 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  -webkit-animation-name: text1;
-          animation-name: text1;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-  -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-          animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); /* 수치변형함수 */
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  opacity: 0;
+  transition: 1s;
+  transform: translateY(20%);
 }
 main .main-container03 .circles .circle01 .circle-text01 b,
 main .main-container03 .circles .circle02 .circle-text01 b,
@@ -277,25 +271,9 @@ main .main-container03 .circles .circle03 .circle-text01 p {
   font-weight: 400;
   line-height: 28px;
 }
-
-@-webkit-keyframes text1 {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50px);
-  }
-}
-
-@keyframes text1 {
-  0% {
-    opacity: 0;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-50px);
-  }
+main .main-container03 .circles .circle01 .circle-text01.active,
+main .main-container03 .circles .circle02 .circle-text01.active,
+main .main-container03 .circles .circle03 .circle-text01.active {
+  opacity: 1;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=brand.css.map */
