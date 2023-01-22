@@ -1,6 +1,15 @@
 @import url(./common.css);
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
-
+@mixin mobile{
+  @media (max-width: 767px){ 
+    @content;
+  }
+}
+@mixin tablet{
+  @media (min-width: 768px) and (max-width: 1023px){
+    @content;
+  }
+}
 
 main {
   width: 100%;
@@ -34,6 +43,7 @@ main {
       margin: 0 auto;
 
       li {
+
         cursor: pointer;
 
         a {
@@ -49,7 +59,7 @@ main {
     }
   }
 
-  .notice-box {
+  .faq-box {
     width: 60%;
     margin: 0 auto;
 
@@ -101,8 +111,13 @@ main {
 
 
     .notice-num {
-      width: 70px;
-      color: #DC272D;
+      width: 150px;
+      text-align: center;
+      color: #009BDE;
+      font-weight: 500;
+      line-height: 1.1;
+      font-family: "Circular Std", "Noto Sans KR";
+      letter-spacing: -0.05em;
 
     }
 
@@ -183,25 +198,22 @@ main {
 }
 
 .panel {
-
   max-height: 0;
-  overflow: hidden;
   transition: max-height 0.2s ease-out;
   border-bottom: 1px solid #bfe1f0;
   letter-spacing: -0.05em;
   display: block;
   background-color: #EEF8FF;
-  padding: 0px 30px;
   font-size: 14px;
   color: #231F20;
   line-height: 1.5;
 
-  p {
-    span {
-      color: #DC272D;
+  overflow: hidden;
 
-    }
+  p {
+    padding: 40px 30px;
   }
+
 }
 
 .page-num {
@@ -229,7 +241,21 @@ main {
   }
 
 }
-@media screen and (max-width:767px){
+@include tablet{
+  /*브라우저 사이즈768px이상, 1023px 이하일때*/
+  main{
+    .main-container{
+      padding-top: 200px;
+      ul{
+        width: 12rem;
+      }
+    }
+  }
+
+
+}
+
+@include mobile{
   main {
     width: 100%;
     margin: 0 auto;
@@ -298,6 +324,9 @@ main {
   
     .container {
       margin-bottom: 40px;
+      width: 120%;
+      margin: 0 auto;
+      transform: translateX(-40px);
   
       &::before {
         content: '';
@@ -331,6 +360,7 @@ main {
       .notice-num {
         width: 70px;
         color: #DC272D;
+        transform: translateX(-10px);
   
       }
   
@@ -437,6 +467,7 @@ main {
     justify-content: space-around;
     width: 10%;
     margin: 0 auto;
+    margin-top: 20px;
   
   
     img {
