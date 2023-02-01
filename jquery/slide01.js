@@ -31,8 +31,11 @@ function init(){
           breakpoints: {
             1024: {
               slidesPerView: 3,
-            }
-          }
+            },
+            640: { //640 이상일 경우
+              slidesPerView: 1, //레이아웃 2열
+            },
+          },
         });
 
         var swiper3 = new Swiper(".vegan-container .swiper", {

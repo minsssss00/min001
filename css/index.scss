@@ -863,7 +863,7 @@ main {
       .swiper-button-next:after,
       .swiper-rtl .swiper-button-prev:after {
         content: 'next';
-        transform: translateX(-250px);
+        transform: translateX(-650px);
       }
 
       .swiper-button-prev:after,
@@ -1673,7 +1673,131 @@ main {
       border-radius: 50px;
       border: 1px solid #231F20;
     }
+
+    .vegan-container {
+      overflow: hidden;
+      margin: 0 auto;
+      width: 100%;
+      height: 700px;
+      position: relative;
+  
+      transition-duration: 0ms;
+      opacity: 1;
+      margin-top: 130px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+  
+      .vegan-text {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: center;
+        align-items: flex-start;
+        align-items: center;
+        left: 0%;
+        margin-bottom: 20px;
+  
+        h2 {
+          font-size: 55px;
+          color: #009BDE;
+          line-height: 1;
+          font-weight: 400;
+          letter-spacing: 0;
+        }
+  
+        p {
+          font-size: 16px;
+          color: #202020;
+          line-height: 26px;
+          margin-top: 25px;
+        }
+  
+        button {
+          display: inline-block;
+          margin-top: 60px;
+          padding: 17px 56px;
+          letter-spacing: 0;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 16px;
+          color: #fff;
+          border: 1px solid #fff;
+          background: linear-gradient(to bottom, #51CAFF, #009BDE);
+          cursor: pointer;
+  
+        }
+  
+        button:hover {
+          content: '';
+          background: #fff;
+          color: #009BDE;
+          border: 1px solid #009BDE;
+          transition: 0.7s;
+        }
+  
+      }
+  
+  
+      .c {
+        width: 66%;
+        height: 596px;
+        position: relative;
+        top: 0;
+        left: 0%;
+  
+        .swiper {
+          width: 80%;
+          height: 100%;
+  
+        }
+  
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          justify-content: flex-start;
+  
+          /* Center slide text vertically */
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: -webkit-flex;
+          display: flex;
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          -webkit-align-items: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          height: 510px;
+          width: 750px;
+          object-fit: cover;
+          transform: scale(1);
+  
+  
+  
+  
+        }
+  
+  
+      }
+  
+  
+    }
   }
+  main .ani00 .d-box .swiper-button-next:after, main .ani00 .d-box .swiper-rtl .swiper-button-prev:after {
+    content: "next";
+    transform: translateX(160px);
+}
+main .ani00 .d-box .swiper-button-prev:after, main .ani00 .d-box .swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  transform: translateX(190px);
+}
 
 }
 
@@ -1749,6 +1873,7 @@ main {
           }
 
           .img-box {
+            width: 100%;
             height: 100%;
             background-color: #fff;
             border-radius: 20px;
@@ -1872,7 +1997,7 @@ main {
 
           position: absolute;
           left: 5%;
-          top: 85%;
+          top: 75%;
 
           h1 {
             font-size: 36px;
@@ -1992,6 +2117,8 @@ main {
 
     .hello-tocobo {
       display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
       margin: 130px 0 100px 0;
 
@@ -2170,10 +2297,10 @@ main {
 
           .product-img {
             a {
+              
               display: flex;
 
               img {
-
                 animation-name: floating;
                 animation-duration: 2.5s;
                 animation-iteration-count: infinite;
@@ -2242,7 +2369,7 @@ main {
       overflow: hidden;
       margin: 0 auto;
       width: 100%;
-      height: 560px;
+      height: 700px;
       position: relative;
 
       transition-duration: 0ms;
@@ -2253,13 +2380,13 @@ main {
 
 
       .vegan-text {
-        position: absolute;
+        position: relative;
         display: flex;
         flex-direction: column;
         align-content: space-between;
         justify-content: center;
         align-items: center;
-        left: 50%;
+        left: 0%;
         width: 100%;
 
         h2 {
@@ -2309,7 +2436,8 @@ main {
         position: absolute;
         top: -30px;
         margin: 0 auto;
-        left: 5%;
+        left: 17%;
+        transform: translateY(300px);
 
         .swiper {
           width: 0%;
@@ -2359,7 +2487,7 @@ main {
       background-color: #EEF8FF;
       overflow: hidden;
       width: 100%;
-      height: 560px;
+      height: 450px;
       display: flex;
       align-items: center;
 
