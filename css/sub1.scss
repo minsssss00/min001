@@ -110,7 +110,6 @@ header {
         line-height: 28px;
         border-radius: 50%;
         margin-left: 5px;
-        background-color: #fff;
         font-size: 15px;
         color: #DC272D;
         text-align: center;
@@ -626,7 +625,7 @@ main {
           img{
             width: 70%;
           }
-          &:nth-child(1){
+          &:nth-child(3){
             display: block;
           }
         }
