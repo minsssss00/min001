@@ -93,6 +93,7 @@ ul {
     list-style: none;
 }
 
+/* 스크롤바 색상변경 */
 ::-webkit-scrollbar {
     width: 5px;
   }

@@ -1,0 +1,173 @@
+@import url(./common.css);
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap");
+header {
+  background-color: #eef9ff;
+}
+
+main {
+  width: 100%;
+  height: 80rem;
+}
+main .bg {
+  background-color: #eef9ff;
+  height: 100%;
+}
+main .bg .login_box {
+  width: 400px;
+  height: 830px;
+  border-radius: 20px;
+  background-color: #fff;
+  margin: 0 auto;
+  transform: translateY(160px);
+  padding: 60px;
+}
+main .bg .login_box .sign h4 {
+  text-align: center;
+  font-size: 1.8rem;
+  padding-bottom: 20px;
+  font-family: "Source Serif Pro";
+  font-weight: normal;
+  font-style: italic;
+  font-size: 33px;
+  line-height: 33px;
+  color: #231F20;
+  letter-spacing: 0;
+}
+main .bg .login_box .sign .input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+main .bg .login_box .sign .input input {
+  margin: 3px 0;
+  background-color: #eef9ff;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 15px;
+}
+main .bg .login_box .sign ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+main .bg .login_box .sign ul li button {
+  font-family: "Noto Sans KR", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: #2B2B2B;
+  border: none;
+  background-color: transparent;
+}
+main .bg .login_box .btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px 0;
+}
+main .bg .login_box .btn button {
+  margin: 3px 0;
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  height: 55px;
+  border-radius: 60px;
+  text-align: center;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+}
+main .bg .login_box .btn button:nth-child(1) {
+  background-color: #DC272D;
+  color: #fff;
+  position: relative;
+}
+main .bg .login_box .btn button:nth-child(1)::after {
+  position: absolute;
+  content: "";
+  width: 0.5px;
+  height: 13px;
+  background-color: #b2b2b2;
+  transform: translate(-150px, -50px);
+}
+main .bg .login_box .btn button:nth-child(2) {
+  color: #DC272D;
+  border: 1px solid #DC272D;
+  background-color: #fff;
+}
+main .bg .login_box .coupon {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+main .bg .login_box .coupon p {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 31px;
+  letter-spacing: -0.05em;
+  color: #231F20;
+}
+main .bg .login_box .sns_sign {
+  margin: 0;
+}
+main .bg .login_box .sns_sign button {
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  border: none;
+  background-color: #fff;
+  border: 1.3px solid #FEE500;
+  display: block;
+  height: 100%;
+  line-height: 55px !important;
+  font-family: "Circular Std", "Noto Sans KR";
+  letter-spacing: 0.08em;
+  width: 400px;
+  font-family: "Circular Std";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 55px;
+  letter-spacing: 0.05em;
+  color: #FEE500;
+}
+main .bg .login_box .sns_sign ul {
+  border: none;
+  border-radius: 30px;
+  height: 40px;
+  width: 100%;
+  height: 100%;
+  line-height: 55px !important;
+  font-family: "Circular Std", "Noto Sans KR";
+  letter-spacing: -0.05em;
+  transform: translateX(-10px);
+}
+main .bg .login_box .sns_sign ul li {
+  margin: 10px;
+}
+main .bg .login_box .sns_sign ul li button:nth-child(1) {
+  border: 1.3px solid #2a5add;
+  color: #2a5add;
+}
+main button {
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 0;
+}/*# sourceMappingURL=sub3-3.css.map */

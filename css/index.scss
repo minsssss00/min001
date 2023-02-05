@@ -1168,6 +1168,9 @@ main {
           }
 
           .img-box {
+            width: 80%;
+            margin: 0 auto;
+            transform: translate(100px,15px);
             height: 100%;
             background-color: #fff;
             border-radius: 20px;
@@ -1329,15 +1332,14 @@ main {
       }
 
       .swiper-pagination-fraction {
-        width:160px;
-        height: 200px;
-        transform: translate(6px, -15px);
-        color: #DC272D;
-        font-size: 40px;
-        font-style: italic;
-        left: 11.5vw;
-        bottom: 69px;
-        font-weight: 0;
+        width: 160px;
+    height: 100px;
+    transform: translate(6px, -15px);
+    color: #DC272D;
+    font-size: 60px;
+    font-style: italic;
+    left: 8.6vw;
+    bottom: 62px;
       }
 
       .swiper-button-prev,
@@ -1376,7 +1378,8 @@ main {
 
       .swiper-pagination span {
         font-style: none;
-        font-size: 4rem;
+        font-size: 3rem;
+        transform: translateX(10px);
         color: #DC272D;
         font-family: "Florencesans", "Noto Sans KR";
 
@@ -1800,6 +1803,8 @@ main .ani00 .d-box .swiper-button-prev:after, main .ani00 .d-box .swiper-rtl .sw
 }
 
 }
+.tocobo-insta .insta-img a{
+}
 
 
 @include mobile {
@@ -1873,11 +1878,13 @@ main .ani00 .d-box .swiper-button-prev:after, main .ani00 .d-box .swiper-rtl .sw
           }
 
           .img-box {
-            width: 100%;
             height: 100%;
             background-color: #fff;
             border-radius: 20px;
             margin: 20px 0;
+            width: 80%;
+            margin: 0 auto;
+            transform: translateY(20px);
 
             .product-img {
               a {
@@ -2036,14 +2043,13 @@ main .ani00 .d-box .swiper-button-prev:after, main .ani00 .d-box .swiper-rtl .sw
 
       .swiper-pagination-fraction {
         width: 90px;
-        height: 90px;
-        transform: translate(6px, -15px);
+        height: 60px;
+        transform: translate(6px, -20px);
         color: #DC272D;
-        font-size: 40px;
+        font-size: 2rem;
         font-style: italic;
-        left: 11.5vw;
+        left: 8.6;
         bottom: 69px;
-        font-weight: 0;
       }
 
       .swiper-button-prev,
@@ -2081,10 +2087,10 @@ main .ani00 .d-box .swiper-button-prev:after, main .ani00 .d-box .swiper-rtl .sw
       }
 
       .swiper-pagination span {
-        font-style: none;
         font-size: 20px;
         color: #DC272D;
         font-family: "Florencesans", "Noto Sans KR";
+        transform: translate(15px,-3px)
 
       }
 

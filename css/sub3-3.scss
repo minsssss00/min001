@@ -1,0 +1,210 @@
+@import url(./common.css);
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap');
+
+@mixin mobile {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+header {
+  background-color: #eef9ff;
+}
+
+main {
+  width: 100%;
+  height: 80rem;
+
+  .bg {
+    background-color: #eef9ff;
+    height: 100%;
+
+    .login_box {
+      width: 400px;
+      height: 830px;
+      border-radius: 20px;
+      background-color: #fff;
+      margin: 0 auto;
+      transform: translateY(160px);
+      padding: 60px;
+
+      .sign {
+        h4 {
+          text-align: center;
+          font-size: 1.8rem;
+          padding-bottom: 20px;
+          font-family: 'Source Serif Pro';
+          font-weight: normal;
+          font-style: italic;
+          font-size: 33px;
+          line-height: 33px;
+          color: #231F20;
+          letter-spacing: 0;
+        }
+
+        .input {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          input {
+            margin: 3px 0;
+            background-color: #eef9ff;
+            border: none;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px 15px;
+          }
+        }
+
+        ul {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: 10px;
+
+          li {
+            button {
+              font-family: 'Noto Sans KR' ,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    color: #2B2B2B;
+              border: none;
+              background-color: transparent;
+            }
+          }
+        }
+      }
+
+      .btn {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 30px 0;
+        button {
+          margin: 3px 0;
+          border: none;
+          border-radius: 30px;
+          height: 40px;
+          width: 100%;
+          display: block;
+          height: 55px;
+          border-radius: 60px;
+          text-align: center;
+          font-family: 'Circular Std';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 15px;
+          line-height: 55px;
+          letter-spacing: 0.05em;
+
+          &:nth-child(1) {
+            background-color: #DC272D;
+            color: #fff;
+            position: relative;
+            &::after{
+              position: absolute;
+              content: "";
+              width: 0.5px;
+              height: 13px;
+              background-color: #b2b2b2;
+              transform: translate(-150px, -50px);
+            }
+          }
+
+          &:nth-child(2) {
+            color: #DC272D;
+            border: 1px solid #DC272D;
+            background-color: #fff;
+          }
+        }
+      }
+
+      .coupon {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+        p {
+          text-align: center;
+          margin-bottom: 25px;
+          font-family: 'Noto Sans KR';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 31px;
+          letter-spacing: -0.05em;
+          color: #231F20;
+          img{
+          }
+        }
+      }
+
+      .sns_sign {
+        margin: 0;
+        
+        button{
+          border: none;
+          border-radius: 30px;
+          height: 40px;
+          border: none;
+          background-color: #fff;
+          border: 1.3px solid #FEE500;
+          display: block;
+          height: 100%;
+          line-height: 55px !important;
+          font-family: "Circular Std","Noto Sans KR";
+          letter-spacing: 0.08em;
+          width: 400px;
+          font-family: "Circular Std";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 55px;
+    letter-spacing: 0.05em;
+          color: #FEE500;
+        }
+        ul{
+          border: none;
+          border-radius: 30px;
+          height: 40px;
+          width: 100%;
+          height: 100%;
+          line-height: 55px !important;
+          font-family: "Circular Std","Noto Sans KR";
+          letter-spacing: -0.05em;
+          transform: translateX(-10px);
+          li{
+            margin: 10px;
+            button{
+              &:nth-child(1){
+                border:1.3px solid #2a5add;
+                color: #2a5add;
+              }
+              &:nth-child(2){
+              
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+main button{
+cursor: pointer;
+}
+
+footer {
+  margin-top: 0;
+}
