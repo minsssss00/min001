@@ -1,6 +1,11 @@
 @charset "UTF-8";
 @import url(./common.css);
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200&display=swap");
+* {
+  font-family: "Circular Std", "Noto Sans KR";
+  letter-spacing: -0.05em;
+}
+
 header {
   z-index: 2;
   position: absolute;
@@ -59,11 +64,29 @@ header .icon button {
   width: 262px;
   justify-content: space-between;
 }
-header .icon span img {
+header .icon button span img {
   padding: 0px 10px 0px 0px;
   cursor: pointer;
 }
-header .icon .cart-count {
+header .icon button span section {
+  border: 1px solid #DC272D;
+  border-radius: 5px;
+  margin-top: 10px;
+  background-color: #EEF8FF;
+}
+header .icon button span section ul {
+  padding: 20px;
+}
+header .icon button span section ul li a {
+  display: block;
+  font-size: 14px;
+  color: #231F20;
+  letter-spacing: 0;
+  line-height: 1;
+  margin: 2px 0;
+  cursor: pointer;
+}
+header .icon button .cart-count {
   display: inline-block;
   width: 26px;
   height: 26px;
@@ -74,7 +97,7 @@ header .icon .cart-count {
   font-size: 15px;
   color: #fff;
   text-align: center;
-  margin-left: -30px;
+  margin-left: -25px;
 }
 
 footer {
@@ -209,7 +232,7 @@ footer .tocobo-footer .cs-box .sns-btn button {
     width: 14rem;
   }
   header .icon button span img {
-    width: 60%;
+    width: 24px;
   }
   header .icon button .cart-count {
     width: 20px;
@@ -495,7 +518,7 @@ header .header-container02 .menu-trigger span {
     display: block;
   }
   header .icon .cart-count {
-    display: none;
+    display: none !important;
   }
   footer {
     padding-top: 40px;
