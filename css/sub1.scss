@@ -187,6 +187,7 @@ main {
     }
 
     .sub-text {
+      transform: translateY(-80px);
       .tag {
 
         transform-origin: top;
@@ -195,7 +196,7 @@ main {
         transform: translate(-50%,400%);
         opacity: 0;
         transition: 1s;
-        transform: translateY(-40%,300%);
+        transform: translateY(-30%,300%);
 
         p {
           padding-bottom: 10px;

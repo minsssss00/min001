@@ -141,6 +141,9 @@ main .main-container01 .main-text h1 {
 main .main-container01 .main-text .info {
   font-size: 27px;
 }
+main .main-container01 .sub-text {
+  transform: translateY(-80px);
+}
 main .main-container01 .sub-text .tag {
   transform-origin: top;
   position: absolute;
@@ -148,7 +151,7 @@ main .main-container01 .sub-text .tag {
   transform: translate(-50%, 400%);
   opacity: 0;
   transition: 1s;
-  transform: translateY(-40%, 300%);
+  transform: translateY(-30%, 300%);
 }
 main .main-container01 .sub-text .tag p {
   padding-bottom: 10px;
