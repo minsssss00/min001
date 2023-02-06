@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>tocobo_community_Faq</title>
+  <title>tocobo_community_1:1CS</title>
   <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/sub3-3.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   <script defer src="./jquery/index-main.js"></script>
+  <script defer src="./jquery/login.js"></script>
 </head>
 
 <body>
@@ -21,8 +22,8 @@
         <section class="sign">
           <h4>Sign up</h4>
           <div class="input">
-            <input type="text" name="userName" placeholder="ID">
-            <input type="text" name="userPassword" placeholder="PW">
+            <input type="text" placeholder="ID" id="id" class="account">
+            <input type="password" placeholder="Password" id="password" class="account">
           </div>
           <ul>
             <li>
@@ -33,8 +34,9 @@
           </ul>
         </section>
         <section class="btn">
-          <button>LOGIN</button>
-          <button>JOTN</button>
+          <button id="login" class="account">LOGIN</button>
+          <button id="join" class="account">JOIN</button>
+          <p id="alert" class="account"> </p>
         </section>
         <section class="coupon">
           <p>신규 회원 가입 시 사용 가능한<br>3000원 할인 쿠폰을 드립니다!</p>
