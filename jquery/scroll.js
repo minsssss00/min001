@@ -12,7 +12,7 @@ function contents(){
             elA[key].classList.add('active');
         }
     });
-    console.log(elC.offsetTop)
+
 
     if(elC.offsetTop - (window.innerHeight*0.4)< window.pageYOffset){
         elS.style="opacity:1";
